@@ -17,3 +17,28 @@
 
 </body>
 </html>
+<!-- traitement.php -->
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $pays = $_POST["pays"];
+    $etatCivil = $_POST["etatCivil"];
+    $nom = $_POST["nom"];
+    $prenom = $_POST["prenom"];
+    $dateNaissance = $_POST["dateNaissance"];
+    $telephone = $_POST["telephone"];
+    $email = $_POST["email"];
+    $codePostal = $_POST["codePostal"];
+    $ville = $_POST["ville"];
+
+    // Faites quelque chose avec les données, par exemple les afficher
+    echo "Pays: $pays <br>";
+    echo "État civil: $etatCivil <br>";
+    echo "Nom: $nom <br>";
+    echo "Prénom: $prenom <br>";
+    echo "Date de naissance: $dateNaissance <br>";
+    echo "Numéro de téléphone: $telephone <br>";
+    echo "E-mail: $email <br>";
+    echo "Code postal: $codePostal <br>";
+    echo "Ville: $ville <br>";
+}
+?>
